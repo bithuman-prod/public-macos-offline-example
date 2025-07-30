@@ -6,7 +6,7 @@ A completely local deployment of bitHuman's AI visual agent running on Apple M2+
 
 **For M2+/M3/M4 MacOS devices:**
 - Docker and Docker Compose (**We strongly recommend [OrbStack](https://orbstack.dev/) for better performance and easier management**)
-- `BITHUMAN_API_SECRET` (or offline token for 100% internet-free operation)
+- `BITHUMAN_API_SECRET` (requires periodic internet access) or offline token for 100% internet-free operation (contact bitHuman team)
 - `.imx` model files (place in `./models/` directory)
 - Python 3.8+ for bitHuman's Apple plugin
 - [Ollama](https://ollama.com/) for local LLM
@@ -121,7 +121,8 @@ Now you have a **100% local AI agent** running on your Mac! The system includes:
 - **Redis**: Message broker
 
 **100% Offline Mode:**
-For complete internet-free operation, contact bitHuman for an offline token. By default, the bitHuman SDK requires internet authentication for proper metering, but we enable 100% offline mode for Enterprise and developers who need offline access.
+- **API Secret**: Requires periodic internet access for authentication and metering
+- **Offline Token**: For complete internet-free operation, contact the bitHuman team directly for a dedicated offline token. This is available for Enterprise customers and developers who need fully offline access.
 
 ## Development
 
